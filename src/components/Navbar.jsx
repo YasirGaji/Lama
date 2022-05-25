@@ -1,16 +1,18 @@
 import React from 'react';
-import styled from styled-components;
+import styled from 'styled-components';
 
 const Container = styled.div`
   height: 60px;
-`;
+  background-color: black;
+  color: white;
+`
 
 const Navbar = () => {
   return (
-    <div>
+    <Container>
       Navbar
-    </div>
+    </Container>
   )
 }
 
-export default Navbar
+export default Navbar;
