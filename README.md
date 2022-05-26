@@ -5,7 +5,7 @@
 A fashion ecommerce website.
 ---
 # Stack
-**React**
+**React |**
 **Styled Components |**
 **Material UI icons |**
 
