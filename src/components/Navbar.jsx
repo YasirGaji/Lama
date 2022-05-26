@@ -42,7 +42,7 @@ const Center = styled.div`
 const Logo = styled.h2`
   font-weight: bold;
   text-align: center;
-  color: #2F21C7;
+  color: black;
 `;
 
 const Right = styled.div`
@@ -75,7 +75,7 @@ const Navbar = () => {
         </Left>
 
         <Center>
-          <Logo>LAMAecommerce</Logo>
+          <Logo>LAMA<span style={{color:"#2F21C7"}}>ecommerce</span>.</Logo>
         </Center>
 
         <Right>
