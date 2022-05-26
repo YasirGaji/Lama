@@ -16,7 +16,7 @@ const Announcement = () => {
   return (
     <>
       <Container>
-        Free shipping on all orders over $100!!!
+        Free shipping on all orders over ₦100,000!!!
       </Container>
     </>
   )
