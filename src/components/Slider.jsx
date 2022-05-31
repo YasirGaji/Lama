@@ -33,7 +33,8 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
-  transform: translateX(0vw)
+  transition: all 0.5s ease-in-out;
+  transform: translateX(${props => props.slideIndex * -100}vw)
 `;
 
 const Slide = styled.div`
@@ -77,14 +78,25 @@ const Button = styled.button`
 `;
 
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleArrowClick = (direction) => {
+
+    if (direction === 'left') {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  };
+
   return (
     <>
       <Container>
-        <Arrow direction="left" onClick={() => handleClick("left")}>
+        <Arrow direction="left" onClick={() => handleArrowClick("left")}>
           <ArrowLeftOutlined />
         </Arrow>
 
-        <Wrapper>
+        <Wrapper slideIndex={slideIndex}>
           {sliderItems.map((item) => (
             <Slide bg={item.bg}>
               <ImgContainer>
@@ -99,7 +111,7 @@ const Slider = () => {
           ))}  
         </Wrapper>
 
-        <Arrow direction="right" onClick={() => handleClick("right")}>
+        <Arrow direction="right" onClick={() => handleArrowClick("right")}>
           <ArrowRightOutlined />
         </Arrow>
       </Container>
@@ -108,6 +120,3 @@ const Slider = () => {
 }
 
 export default Slider;
-
-{/* <Image src='https://i.ibb.co/dB2d5Mb/LAMAecommerce.png' />
-              <Image src='https://i.ibb.co/61BCsSR/LAMAecommerce-1.png' /> */}
