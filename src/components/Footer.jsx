@@ -16,7 +16,6 @@ const Left = styled.div`
 
 const Logo = styled.h2`
   font-weight: bold;
-  text-align: center;
   color: black;
 `;
 
