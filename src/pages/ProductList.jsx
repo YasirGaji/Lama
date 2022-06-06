@@ -9,7 +9,9 @@ const Container = styled.div`
 
 const Title = styled.h1``;
 
-const FilterContainer = styled.div``
+const FilterContainer = styled.div``;
+
+const Filter = styled.div``;
 
 
 const ProductList = () => {
@@ -22,8 +24,8 @@ const ProductList = () => {
         <Title>Outfits</Title>
 
         <FilterContainer>
-          <Filter></Filter>
-          <Filter></Filter>
+          <Filter>filter 1</Filter>
+          <Filter>filter 2</Filter>
         </FilterContainer>
       </Container>
     </>
