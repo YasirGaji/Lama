@@ -41,7 +41,23 @@ const TopText = styled.span`
   margin: 0px 10px;
 `;
 
-const Bottom = styled.div``;
+const Bottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Info = styled.div`
+  flex: 3;
+`;
+
+const Product = styled.div`
+ 08135659765
+`;
+
+
+const Summary = styled.div`
+  flex: 1;
+`;
 
 const Cart = () => {
   return (
@@ -59,7 +75,30 @@ const Cart = () => {
           </TopTexts>
           <TopButton type="filled">CHECKOUT NOW</TopButton>
         </Top>
-        <Bottom></Bottom>
+
+        <Bottom>
+          <Info>
+            <Product>
+              <ProductDetail>
+                <Image src="https://www.jackjones.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw24cbf597/pim-static/large/12203652_White_007_ProductLarge.jpg?sw=685" />
+                <Details>
+                  <ProductName><b>Product:</b>Jack&Jones Shoes</ProductName>
+                  <ProductId><b>ID:</b>984237443</ProductId>
+                  <ProductColor />
+                  <ProductSize><b>Size:</b> 42</ProductSize>
+                </Details>
+              </ProductDetail>
+
+              <PriceDetail>
+                Price
+              </PriceDetail>
+            </Product>
+          </Info>
+
+          <Summary>
+            Summary
+          </Summary>
+        </Bottom>
       </Wrapper>
       <Newsletter />
       <Footer />
