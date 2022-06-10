@@ -15,9 +15,14 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  ${mobile(
+  ${'' /* ${mobile(
     {padding: "10px", flexDirection: "column"}
-  )}
+  )} */}
+
+  @media only screen and (max-width: 380px) {
+    padding: 10px;
+    flex-direction: column;
+  }
 `;
 
 const ImgContainer = styled.div`

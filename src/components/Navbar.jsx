@@ -10,6 +10,10 @@ const Container = styled.div`
   ${mobile({
     backgroundColor: "red",
   })}
+
+  @media only screen and (max-width: 380px) {
+    background-color: red;
+  }
 `;
 const Wrapper = styled.div`
   padding: 10px 20px;
@@ -18,6 +22,10 @@ const Wrapper = styled.div`
   ${mobile(
     {padding: "10px 0px"}
   )}
+
+  @media only screen and (max-width: 380px) {
+    padding: 10px 0px;
+  }
 `;
 
 const Left = styled.div`
@@ -31,7 +39,11 @@ const Language = styled.span`
   cursor: pointer;
   ${mobile(
     {display: "none"}
-  )}
+  )};
+
+  @media only screen and (max-width: 380px) {
+    display: none;
+  }
 `;
 
 const SearchContainer = styled.div`
@@ -46,7 +58,11 @@ const Input = styled.input`
   border: none;
   ${mobile(
     {width: "50px"}
-  )}
+  )};
+
+  @media only screen and (max-width: 380px) {
+    width: 50px;
+  }
 `;
 
 const Center = styled.div`
@@ -59,7 +75,11 @@ const Logo = styled.h2`
   color: black;
   ${mobile(
     {fontSize: "24px"}
-  )}
+  )};
+
+  @media only screen and (max-width: 380px) {
+    font-size: 20px;
+  }
 `;
 
 const Right = styled.div`
@@ -69,7 +89,11 @@ const Right = styled.div`
   justify-content: flex-end;
   ${mobile(
     {justifyContent: "center"}
-  )}
+  )};
+
+  @media only screen and (max-width: 380px) {
+    justify-content: center;
+  }
 `;
 
 const MenuItem = styled.div`
@@ -78,7 +102,12 @@ const MenuItem = styled.div`
   margin-left: 15px;
   ${mobile(
     {fontSize: "12px", marginLeft: "10px"}
-  )}
+  )};
+
+  @media only screen and (max-width: 380px) {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 `;
 
 
