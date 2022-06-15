@@ -3,6 +3,7 @@ import { Badge } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
   height: 60px;
@@ -67,6 +68,8 @@ const Input = styled.input`
 
 const Center = styled.div`
   flex: 1;
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 const Logo = styled.h2`
@@ -127,7 +130,9 @@ const Navbar = () => {
         </Left>
 
         <Center>
-          <Logo>LAMA<span style={{color:"#2F21C7"}}>ecommerce</span>.</Logo>
+          <NavLink to="/">
+            <Logo>LAMA<span style={{color:"#2F21C7"}}>ecommerce</span>.</Logo>
+          </NavLink>
         </Center>
 
         <Right>
