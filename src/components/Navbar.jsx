@@ -130,19 +130,26 @@ const Navbar = () => {
         </Left>
 
         <Center>
-          <NavLink to="/">
+          <NavLink style={{textDecoration:"none"}} to="/">
             <Logo>LAMA<span style={{color:"#2F21C7"}}>ecommerce</span>.</Logo>
           </NavLink>
         </Center>
 
         <Right>
-          <MenuItem>Register</MenuItem>
-          <MenuItem>Sign-in</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
-            </Badge>
-          </MenuItem>
+          <NavLink style={{textDecoration:"none"}} to="/signup">
+            <MenuItem>Register</MenuItem>
+          </NavLink>
+          <NavLink style={{textDecoration:"none"}} to="/signin">
+            <MenuItem>Sign-in</MenuItem>
+          </NavLink>
+
+          <NavLink to="/cart">
+            <MenuItem>
+              <Badge badgeContent={4} color="primary">
+                <ShoppingCartOutlined />
+              </Badge>
+            </MenuItem>
+          </NavLink>
         </Right>
       </Wrapper>
     </Container>

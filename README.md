@@ -9,6 +9,7 @@ A fashion ecommerce website.
 **Styled-Components |**
 **materialUI icons |**
 **imgbb |**
+**firebase |**
 
 
 ---
