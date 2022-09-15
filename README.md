@@ -1,4 +1,4 @@
-# (LAMAecommerce)[https://lamaecommerce.netlify.app/]
+# LAMAecommerce <https://lamaecommerce.netlify.app/>
 
 **Version 1.0.0**
 
